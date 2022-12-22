@@ -1,0 +1,11 @@
+>li.block
+	>a.blocklink
+		>div.ct
+			>p.classname
+				.{{classname}}
+			>p.classID
+				.{{classID}}
+			>p.Teacher
+				.{{Teacher}}
+			>p.centerp
+				.{{indicator}}
