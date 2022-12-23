@@ -1,0 +1,10 @@
+>p.searchresult
+	@click = show
+	>span
+		.{{classID}}
+	>span
+		.{{classname}}
+	>span
+		.{{Teacher}}
+	>button#ban
+		@click = ban

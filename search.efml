@@ -1,0 +1,6 @@
+>input
+	@blur = blur
+	#type = "search"
+	#placeholder = {{ placeholder = "" }}
+	#id = search{{countsearch}}
+	@keydown = letBlur

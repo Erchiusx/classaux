@@ -2,10 +2,10 @@
 	>a.blocklink
 		>div.ct
 			>p.classname
-				.{{classname}}
+				.{{classname = }}
 			>p.classID
-				.{{classID}}
+				.{{classID = }}
 			>p.Teacher
-				.{{Teacher}}
+				.{{Teacher = }}
 			>p.centerp
-				.{{indicator}}
+				.{{indicator = }}

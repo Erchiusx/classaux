@@ -1,5 +1,5 @@
 var block , day , schedule;
-var timetable;
+var timetable, timetableMountingPoint;
 
 fetch( "./block.efml" )
 	.then( x => x.text() )
@@ -82,6 +82,8 @@ function fetchSchedule(){
 		} )
 		.then( () => {
 			timetable = new schedule;
-			timetable.$mount( { target: document.body } );
+			timetableMountingPoint = document.getElementById('timetable');
+			timetable.$mount( { target: timetableMountingPoint , option: "replace" } );
+			schedule.refresh = () =>{ timetable = new schedule ; timetable.display() ; timetable.$mount( { target: document.querySelector( "div.schedule" ) , option: "replace"})};
 		} )
 }
